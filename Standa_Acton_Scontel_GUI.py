@@ -1,4 +1,4 @@
-import os, sys, time, math, socket, re, threading, queue
+import os, sys, time, math, socket, re, threading, queue, webbrowser
 from datetime import datetime
 from itertools import cycle
 
@@ -965,6 +965,21 @@ class Application(tk.Tk):
         self.stop_btn.pack(side="left", padx=5)
         self.graph_btn = ttk.Button(btn_frame, text="Графики", command=self.toggle_graph_window)
         self.graph_btn.pack(side="left", padx=5)
+
+        link_frame = ttk.Frame(right_frame)
+        link_frame.pack(side=tk.BOTTOM, fill=tk.X, pady=(2, 2))
+        link_label = tk.Label(
+            link_frame,
+            text="GitHub Repository",
+            fg="blue",
+            cursor="hand2",
+            font=("TkDefaultFont", 9, "underline")
+        )
+        link_label.pack()
+        link_label.bind(
+            "<Button-1>",
+            lambda e: webbrowser.open("https://github.com/KrazyCatPower/Standa_Acton2300i_SSPDScontel_Spectra_Distribution.git")
+        )
 
         self.progress = ttk.Progressbar(left_frame, length=200, mode="determinate")
         self.progress.pack(side="bottom", fill="x", pady=5)
