@@ -1,4 +1,4 @@
 # Standa_Acton2300i_SSPDScontel_Spectra_Distribution
-/n Software for recording photoluminescence and electroluminescence spectra and distributions using a Standa linear translation stage, an Acton 2300i monochromator, and a Scontel superconducting single-photon detector.
+Software for recording photoluminescence and electroluminescence spectra and distributions using a Standa linear translation stage, an Acton 2300i monochromator, and a Scontel superconducting single-photon detector.
 
-/n Attention! To launch the application, the "ximc" folder (Standa library) must be in the same directory as "Standa_Acton_Scontel_GUI.py".
+Attention! To launch the application, the "ximc" folder (Standa library) must be in the same directory as "Standa_Acton_Scontel_GUI.py".
